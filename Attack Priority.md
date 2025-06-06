@@ -12,20 +12,21 @@ It also makes attacks with the tag ```#lowpriority``` to go last in the turn ord
 
 Attacks that don't use any of the two tags are placed in between, sorted by their speed stat.
 
-## 使用方法 / Instructions 
+## 使用方法
 
 * これはBakinのデフォルトのバトルシステム用に設計されています。
 * もし ``battlescript`` フォルダにバトルシステムがインストールされていない場合は、 Functions -> Expanded Features で Copy Battle System (Default) を選択してください。
 * ゲームプロジェクトファイル内の``battlescript``フォルダを開き、コードエディターで``BattleSequenceManager.cs``を開きます。
 * CTRL+F（検索）を押し、``UpdateBattleState_SortBattleActions``を検索します。
-* 関数全体を以下のように置き換えてください：
+* 関数全体を以下のコード・スニペットで置き換えてください。
+
+## Instructions
 
 * This was designed for Bakin's default battle system.
 * If you don't have the battle system installed in the ``battlescript`` folder, go to Functions -> Expanded Features, and select Copy Battle System (Default)
 * Open the ``battlescript`` folder inside the game project files, and open ``BattleSequenceManager.cs`` in a code editor.
 * Press CTRL+F (find and search) and search for ``UpdateBattleState_SortBattleActions``.
-* Replace the entire function with the following:
-
+* Replace the entire function with the following code snippet below.
 
 
 ```
