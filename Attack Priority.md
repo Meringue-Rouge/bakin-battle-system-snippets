@@ -28,6 +28,7 @@ Attacks that don't use any of the two tags are placed in between, sorted by thei
 * Press CTRL+F (find and search) and search for ``UpdateBattleState_SortBattleActions``.
 * Replace the entire function with the following code snippet below.
 
+## Code Snippet
 
 ```
 private void UpdateBattleState_SortBattleActions()
