@@ -14,7 +14,11 @@ Attacks that don't use any of the two tags are placed in between, sorted by thei
 
 ## 使用方法 / Instructions 
 
-
+* This was designed for Bakin's default battle system.
+* If you don't have the battle system installed in the ``battlescript`` folder, go to Functions -> Expanded Features, and select Copy Battle System (Default)
+* Open the ``battlescript`` folder inside the game project files, and open ``BattleSequenceManager.cs`` in a code editor.
+* Press CTRL+F (find and search) and search for ``UpdateBattleState_SortBattleActions``.
+* Replace the entire function with the following:
 
 ```
 private void UpdateBattleState_SortBattleActions()
