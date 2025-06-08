@@ -30,9 +30,9 @@ Requires the creation of 3 different cameras for it to work properly.
 * CTRL+F（検索）を押し、``internal override void Update(List<BattlePlayerData> playerData, List<BattleEnemyData> enemyMonsterData)``を検索します。
 * このコードで関数全体をオーバーライドします。
 * 希望する各CameraAnimation割り当てのGUID値を、独自のカメラGUIDに置き換えます。 コメントは使用するカメラのタイプを示します：
-* PLAYER DEC: プレイヤー決定時のアイドリング時に使用するカメラです。
-* ALLY TARGET： ALLY TARGET: 味方のターゲット（ヒーリング、アイテムなど）を選択するときに使用するカメラ。
-* 敵ターゲット： 敵ターゲット: 敵ターゲット(攻撃、スキルなど)を選択する際に使用するカメラ。
+  * PLAYER DEC: プレイヤー決定時のアイドリング時に使用するカメラです。
+  * ALLY TARGET： 味方のターゲット（ヒーリング、アイテムなど）を選択するときに使用するカメラ。
+  * ENEMY TARGET： 敵ターゲット(攻撃、スキルなど)を選択する際に使用するカメラ。
 
 ## Instructions
 
