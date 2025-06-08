@@ -3,6 +3,13 @@
 
 "RPG Developer Bakin" Battle System code snippets that adds additional customization features to the default Yukar battle system.
 
+## 選手の決断：3台のカメラ / Player Decision: 3 Cameras
+プレイヤー決定フェイズ中に、状況に応じて3つの異なるカメラを切り替える：味方をターゲット、敵をターゲット、アイドル。 現在バグがあり、攻撃コマンドでソフトロックが発生する。
+
+Swaps between three different cameras during the Player Decision phase according to what's going on: targeting allies, targeting foes and idle. Currently buggy and causes soft-locks on the attack command.
+
+[コード・スニペットを見る / View Code Snippet](https://github.com/Meringue-Rouge/bakin-battle-system-snippets/blob/main/Player%20Decision%3A%20Additional%20Cameras.md)
+
 ## 選手コマンド選択カメラ： カメラの "プレイヤー "座標を、コマンドを決定している現在のパーティメンバーに設定します。 / Player Command Selection Camera: Set the Camera's "Player" coordinate to the current party member having their commands decided on.
 プレイヤー・コマンド選択時の "プレイヤー "カメラのターゲット・ロックオンを、現在アクションを決めているパーティ・メンバーをターゲットにする。
 
