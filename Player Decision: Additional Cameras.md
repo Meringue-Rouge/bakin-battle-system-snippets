@@ -28,6 +28,8 @@ Requires the creation of 3 different cameras for it to work properly.
 > 逃げるなど、いくつかのプリセットアクションのアニメーションが壊れるかもしれません。
 > このコードを使用する際は注意してください！ バックアップを取り、すべてをテストしてください。
 > 
+> Basic attacks soft-lock after Turn 1. I'm looking for solution.
+> Skills work fine.
 > The animation of some preset actions, such as running away, might break.
 > There might be severe game breaking bugs that I did not find yet, so use this code with caution! Make a backup and test everything.
 
