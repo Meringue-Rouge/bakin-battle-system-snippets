@@ -36,10 +36,11 @@ Requires the creation of 3 different cameras for it to work properly.
 * ゲームプロジェクトファイル内の``battlescript``フォルダを開き、コードエディタで``BattleViewer3D.cs``を開きます。
 * CTRL+F（検索）を押し、``internal override void Update(List<BattlePlayerData> playerData, List<BattleEnemyData> enemyMonsterData)``を検索します。
 * このコードで関数全体をオーバーライドします。
-* 希望する各CameraAnimation割り当てのGUID値を、独自のカメラGUIDに置き換えます。 コメントは使用するカメラのタイプを示します：
+* 各 ``desiredCameraAnimation`` 割り当ての GUID 値を、独自のカメラ GUID で置き換えます。 コメントは使用するカメラのタイプを示します：
   * PLAYER DEC: プレイヤー決定時のアイドリング時に使用するカメラです。
   * ALLY TARGET： 味方のターゲット（ヒーリング、アイテムなど）を選択するときに使用するカメラ。
   * ENEMY TARGET： 敵ターゲット(攻撃、スキルなど)を選択する際に使用するカメラ。
+  * 編集する行には、コメントに💢💢💢が付きます。
 
 ## Instructions
 
@@ -48,10 +49,11 @@ Requires the creation of 3 different cameras for it to work properly.
 * Open the ``battlescript`` folder inside the game project files, and open ``BattleViewer3D.cs`` in a code editor.
 * Press CTRL+F (find and search) and search for ``internal override void Update(List<BattlePlayerData> playerData, List<BattleEnemyData> enemyMonsterData)``.
 * Override the entire function with this code.
-* Replace the GUID values for each desiredCameraAnimation assignment with your own camera GUIDs. The comments indicate the type of camera to use:
+* Replace the GUID values for each ``desiredCameraAnimation`` assignment with your own camera GUIDs. The comments indicate the type of camera to use:
   * PLAYER DEC: The camera used when idling on player decision.
   * ALLY TARGET: The camera used when choosing an ally target (healing, item, etc).
   * ENEMY TARGET: The camera used when choosing an enemy target (attack, skill, etc).
+  * The lines to edit are marked with 💢💢💢 in their comments.
 
 ## コード・スニペット / Code Snippet
 
@@ -169,12 +171,12 @@ Requires the creation of 3 different cameras for it to work properly.
                 if (selectedMonster != null)
                 {
                     skillUser = searchFromActors(selectedMonster);
-                    desiredCameraAnimation = "01ab9724-6b93-4440-b55a-2f91def556b8"; // ENEMY TARGET
+                    desiredCameraAnimation = "01ab9724-6b93-4440-b55a-2f91def556b8"; // ENEMY TARGET 💢💢💢
                 }
                 else
                 {
                     skillUser = friends[0];
-                    desiredCameraAnimation = "5f73a3bc-830a-404b-afa1-87a2f4eaf2f0"; // PLAYER DEC
+                    desiredCameraAnimation = "5f73a3bc-830a-404b-afa1-87a2f4eaf2f0"; // PLAYER DEC 💢💢💢
                 }
             }
             else if (displayWindow == WindowType.CommandTargetPlayerListWindow)
@@ -183,18 +185,18 @@ Requires the creation of 3 different cameras for it to work properly.
                 if (selectedPlayer != null)
                 {
                     skillUser = searchFromActors(selectedPlayer);
-                    desiredCameraAnimation = "6ff4c3a2-a5f1-4d46-86d9-5078d0d2cff6"; // ALLY TARGET
+                    desiredCameraAnimation = "6ff4c3a2-a5f1-4d46-86d9-5078d0d2cff6"; // ALLY TARGET 💢💢💢
                 }
                 else
                 {
                     skillUser = friends[0];
-                    desiredCameraAnimation = "5f73a3bc-830a-404b-afa1-87a2f4eaf2f0"; // PLAYER DEC
+                    desiredCameraAnimation = "5f73a3bc-830a-404b-afa1-87a2f4eaf2f0"; // PLAYER DEC 💢💢💢
                 }
             }
             else if (owner.battleState >= BattleState.WaitEventsBeforeCommandSelect &&
                     owner.battleState <= BattleState.SortBattleActions)
             {
-                desiredCameraAnimation = "5f73a3bc-830a-404b-afa1-87a2f4eaf2f0"; // PLAYER DEC
+                desiredCameraAnimation = "5f73a3bc-830a-404b-afa1-87a2f4eaf2f0"; // PLAYER DEC 💢💢💢
             }
 
             // Play the custom camera animation only if it has changed
