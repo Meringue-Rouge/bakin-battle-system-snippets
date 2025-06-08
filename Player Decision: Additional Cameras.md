@@ -14,6 +14,8 @@ Requires the creation of 3 different cameras for it to work properly.
 > To convert a Normal Camera into a Battle Camera, right-click the Battle Camera, copy it, and then in any map folder, paste it.
 
 > [!IMPORTANT]
+> ![Capture d'écran 2025-06-08 213033-small](https://github.com/user-attachments/assets/66bd7699-06d8-4c41-bd9e-a5e1dd47abe0)
+> 
 > コードスニペットを動作させるには、カメラGUIDが必要です。
 > 共通イベントを作成し、各カメラで3つの異なるカメラ再生イベントを追加し、イベントをTXTファイルとしてエクスポートすることで取得できます。
 > TXTファイルを開き、作成した3つのイベントを見つけ、CAM_ANIMATIONイベントのguidフィールドにある数字と文字の長い文字列をコピーします。
