@@ -3,6 +3,13 @@
 
 "RPG Developer Bakin" Battle System code snippets that adds additional customization features to the default Yukar battle system.
 
+## 選手コマンド選択カメラ： カメラの "プレイヤー "座標を、コマンドを決定している現在のパーティメンバーに設定します。 / Player Command Selection Camera: Set the Camera's "Player" coordinate to the current party member having their commands decided on.
+プレイヤー・コマンド選択時の "プレイヤー "カメラのターゲット・ロックオンを、現在アクションを決めているパーティ・メンバーをターゲットにする。
+
+Make the "Player" camera target lock-on during the Player Command Selection target the party member that's currently deciding their action. 
+
+[コード・スニペットを見る / View Code Snippet](https://github.com/Meringue-Rouge/bakin-battle-system-snippets/blob/main/Player%20Decision%20Player%20Target%20Lock.md)
+
 ## 優先攻撃 / Priority Attacks
 常に先攻になる攻撃と常に後攻になる攻撃を追加し、2つ以上の優先順位が同じ場合はスピードでソートする。
 
@@ -16,3 +23,4 @@ Adds attacks that always go first and attacks that always go last, and sorts by 
 Calls a common event before the turn is executed, right after every player has decided but before the turn order gets decided.
 
 [コード・スニペットを見る / View Code Snippet](https://github.com/Meringue-Rouge/bakin-battle-system-snippets/blob/main/Common%20Event%20Before%20Turn%20Execution.md)
+
