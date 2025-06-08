@@ -22,6 +22,13 @@ Requires the creation of 3 different cameras for it to work properly.
 > You can obtain them by creating a common event, adding 3 different Camera Playback events with each camera, and then exporting the event as a TXT file.
 > Open the TXT file and find the 3 events you've created, and copy the long string of numbers and letters in the guid field of the CAM_ANIMATION events.
 
+> [!CAUTION]
+> 逃げるなど、いくつかのプリセットアクションのアニメーションが壊れるかもしれません。
+> このコードを使用する際は注意してください！ バックアップを取り、すべてをテストしてください。
+> 
+> The animation of some preset actions, such as running away, might break.
+> There might be severe game breaking bugs that I did not find yet, so use this code with caution! Make a backup and test everything.
+
 ## 使用方法
 
 * これはBakinのデフォルトのバトルシステム用に設計されています。
