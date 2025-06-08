@@ -25,7 +25,9 @@ Requires the creation of 3 different cameras for it to work properly.
 > Open the TXT file and find the 3 events you've created, and copy the long string of numbers and letters in the guid field of the CAM_ANIMATION events.
 
 > [!CAUTION]
-> 逃げるなど、いくつかのプリセットアクションのアニメーションが壊れるかもしれません。
+> 第1コーナー後の基本攻撃がソフトロック。 解決策を探しています。
+> スキルは問題なく使えます。
+> 逃げたりするプリセットアクションのアニメーションが壊れるかもしれません。
 > このコードを使用する際は注意してください！ バックアップを取り、すべてをテストしてください。
 > 
 > Basic attacks soft-lock after Turn 1. I'm looking for solution.
