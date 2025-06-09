@@ -2,6 +2,7 @@
 
 > [!NOTE]
 > バグ修正 09/06/25： PlayCustomCameraAnimationGUID関数を追加するのを忘れていた！ ソフトロックは解決した（1行のコードが問題だった）！
+> 
 > Bug Fix 09/06/25: Forgot to add the PlayCustomCameraAnimationGUID function! Softlock has been solved (one line of code was the issue)!
 
 バトルシステムは、コマンド決定フェイズに3つの追加カメラ（バトルカメラではない）を使用する。
