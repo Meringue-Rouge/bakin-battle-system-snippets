@@ -1,5 +1,9 @@
 # 選手指揮の決定：追加カメラ3台 / Player Command Decision: 3 Additional Cameras
 
+> [!NOTE]
+> バグ修正 09/06/25： PlayCustomCameraAnimationGUID関数を追加するのを忘れていた！ ソフトロックは解決した（1行のコードが問題だった）！
+> Bug Fix 09/06/25: Forgot to add the PlayCustomCameraAnimationGUID function! Softlock has been solved (one line of code was the issue)!
+
 バトルシステムは、コマンド決定フェイズに3つの追加カメラ（バトルカメラではない）を使用する。
 正しく動作させるには、3つの異なるカメラを作成する必要があります。
 
@@ -23,17 +27,6 @@ Requires the creation of 3 different cameras for it to work properly.
 > You'll need the Camera GUIDs for the code snippet to work.
 > You can obtain them by creating a common event, adding 3 different Camera Playback events with each camera, and then exporting the event as a TXT file.
 > Open the TXT file and find the 3 events you've created, and copy the long string of numbers and letters in the guid field of the CAM_ANIMATION events.
-
-> [!CAUTION]
-> 第1コーナー後の基本攻撃がソフトロック。 解決策を探しています。
-> スキルは問題なく使えます。
-> 逃げたりするプリセットアクションのアニメーションが壊れるかもしれません。
-> このコードを使用する際は注意してください！ バックアップを取り、すべてをテストしてください。
-> 
-> Basic attacks soft-lock after Turn 1. I'm looking for solution.
-> Skills work fine.
-> The animation of some preset actions, such as running away, might break.
-> There might be severe game breaking bugs that I did not find yet, so use this code with caution! Make a backup and test everything.
 
 ## 使用方法
 
@@ -66,6 +59,17 @@ Requires the creation of 3 different cameras for it to work properly.
 ```
         // Determine the desired camera animation
         private string currentCameraAnimationGUID;
+
+        // バグ修正 / BUG FIX
+        // The commented out line caused Attack/Escape and other attacks to softlock.
+        // コメントアウトされた行は、アタック／エスケープやその他の攻撃がソフトロックする原因となっていた。
+        public void PlayCustomCameraAnimationGUID(string cam_guid_string)
+        {
+            StopCameraAnimation();
+            camManager.setCameraFromGuid(catalog, new Guid(cam_guid_string));
+            //camManager.playAnimation();
+        }
+
         internal override void Update(List<BattlePlayerData> playerData, List<BattleEnemyData> enemyMonsterData)
         {
             base.Update(playerData, enemyMonsterData);
