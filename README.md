@@ -3,6 +3,19 @@
 
 "RPG Developer Bakin" Battle System code snippets that adds additional customization features to the default Yukar battle system.
 
+> [!TIP]
+> **NEW！ 手動でコードを編集することなく、簡単に有効にしたオプションに基づいて特定のファイルを自動的に生成します！**
+> 
+> **NEW! Automatically generate specific files based on the options you've enabled easily, without having to edit the code manually!**
+> 
+> https://meringue-rouge.github.io/Bakin-Battle-Tweaker/
+> 
+> ![image](https://github.com/user-attachments/assets/4f855b54-5237-4da2-ae12-0d9f6e7a0f9c)
+
+
+
+
+
 ## 選手の決断：3台のカメラ / Player Decision: 3 Cameras
 プレイヤー決定フェイズ中に、状況に応じて3つの異なるカメラを切り替える：味方をターゲット、敵をターゲット、アイドル。 現在バグがあり、攻撃コマンドでソフトロックが発生する。
 
